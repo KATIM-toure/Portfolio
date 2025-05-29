@@ -1,0 +1,268 @@
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Katim TOURE - Portfolio</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #1e2a38;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #00bfff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+        section:nth-child(even) {
+            animation-delay: 0.3s;
+        }
+         section:nth-child(old) {
+            animation-delay: 0.1s;
+         }
+
+         h2 {
+            border-left: 5px solid #00bfff;
+            padding-left: 10px;
+            color: #1e2a38;
+         }
+
+         form {
+            margin-top: 20px;
+            background-color: #eef2f7;
+            padding: 20px;
+            border-radius: 5px;
+         }
+
+         input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+         }
+
+         button {
+            background-color: #00bfff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+         }
+
+         button:hover {
+            background-color: #009acd;
+         }
+
+         footer {
+            background-color: #1e2a38;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+         }
+
+         #topBtn {
+            display: none; /*Caché au départ*/
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 20px;
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: opacity 0.4s ease;
+         }
+
+         #topBtn:hover {
+            background-color: #009acd;
+         }
+         /*Animation*/
+         @keyframes fadeInUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Katim TOURE</h1>
+        <p>Étudiant en Développement d'Applications Web, Mobile, Gaming</p>
+        <nav>
+        <a href="#about">À propos</a>
+        <a href="#education">Formation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#interests">Centres d'intérêt</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Je suis étudiant en première année de formation en développement d'applications (web, mobile, gaming) à l'Université Numérique Cheikh Hamidou Kane. Intégrer un groupe professionnel représente pour moi une excellente opportunitéde mettre en œuvre mes compétences et de progresser. Je suis organisé, précis et endurant</p>
+    </section>
+
+    <section id="education">
+        <h2>Formation</h2>
+        <ul>
+        <li><strong>2025 </strong> Licence 1 Développement d'Applications: Web, Mobile, Gaming - Université Numérique Cheikh Hamidou Kane</li>
+        <li><strong>2024 </strong> Certificat en informatique et internet - Délivré par le programme FORCE-N</li>
+        <li><strong>2021 - 2024</strong> Cycle Secondaire - Lycée Serigne Ahmadou Ndack Seck de Thiès</li>
+        <li><strong>2019 - 2021</strong> Cycle Moyen (4e - 3e) - CEM Keur Madaro, Thiès</li>
+        <li><strong>2011 - 2019</strong> Cycle élémentaire et Moyen (6e - 5e) - École Plus, Grand Yoff, Dakar</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <h3>Langues</h3>
+        <ul>
+            <li>Français: Courant</li>
+            <li>Anglais: Intermédiaire</li>
+            <li>Wolof: Courant</li>
+        </ul>
+        <h3>Langages de progammation</h3>
+        <ul>
+            <li>HTML & CSS (niveau scolaire)</li>
+            <li>JavaScript (niveau scolaire)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+            <li>VS Code: progammation (niveau scolaire)</li>
+            <li>Word: Bureautique (niveau Intermédiaire)</li>
+            <li>Excel: Bureautique (niveau scolaire)</li>
+            <li>PowerPoint: Bureautique (niveau Intermédiaire)</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Centres d'intérêt</h2>
+        <ul>
+            <li>Regarder des films et documentaires...</li>
+            <li>Jeux vidéos</li>
+            <li>Football</li>
+        </ul>
+    </section>
+
+    <section id="Contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Adresse: Dakar, Sénégal</li>
+            <li>Téléphone: +221 78 314 13 81</li>
+            <li>Email: touremandimory5@gmail.com</li>
+        </ul>
+
+        <h3>Écris-moi un message</h3>
+        <form id="contact-form" action="https://formspree.io/f/xeogybnw" method="post">
+           <label for="name">Nom :</label><br/>
+           <input type="text" id="name" name="name" required><br/><br/>
+
+           <label for="email">Email :</label><br/>
+           <input type="email" id="email" name="email" required><br/><br/>
+
+           <label for="message">Message :</label><br/>
+           <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+           <button type="submit">Envoyer</button>
+        </form>
+        <!-- Message de confirmation -->
+         <p id="form-message" style="color:green; font-weight: bold;"></p>
+    </section>
+    
+    <footer>
+        <p>© 2025 Katim TOURE. Tous droits réservés.</p>
+    </footer>
+    
+    <script>
+        const form = document.getElementById('contact-form');
+        const message = document.getElementById('form-messge');
+
+        form.addEventListener('submite', function(e) {
+            e.preventDefault();
+
+            const formData =new FormData(form);
+
+            fetch(form.action,{
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept':'application/json'
+                }
+            })
+            .then(response=> {
+                if(response.ok) {
+                    message.textContent = "Merci ! Votre message à été envoyé";
+                    form.reset();
+                } else {
+                    message.textContent = "Erreur !! Veuillez réessayer.";
+                }
+            })
+            .catch(error =>{
+                message.textContent = "Erreur réseau !! Veuillez réessayer.";
+            });
+          });
+
+          //Bouton retour en haut
+          const topBtn = document.getElementById('topBtn');
+
+          //Montrer le bouton quand on scroll vers le bas
+          window.onscroll=function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+          };
+
+          //Quand on clique dessus, remonter en haut document
+          topBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top:0,
+                behavior: "smooth"
+            });
+          });
+    </script>
+    <!-- Bouton retour en haut -->
+    <button id="topBtn" title="Retour en haut">↑</button>
+</body>
+</html>
