@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Katim TOURE - Portfolio</title>
     <style>
-        body{
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            object-fit: cover;
+            border: 2px solid white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        body {
             font-family: 'Poppins', sans-serif;
             margin: 0; padding: 0;
             background-color: #f5f7fa;
@@ -126,7 +141,10 @@
 <body>
 
     <header>
-        <h1>Katim TOURE</h1>
+        <div class="header-top">
+            <image src="c:\Users\HP\OneDrive\Dokumente\katim.jpg" alt="Photo de Katim TOURE" class="profile-pic">
+                <h1>Katim TOURE</h1>
+        </div>
         <p>Étudiant en Développement d'Applications Web, Mobile, Gaming</p>
         <nav>
         <a href="#about">À propos</a>
